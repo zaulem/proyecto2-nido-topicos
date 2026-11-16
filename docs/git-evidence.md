@@ -8,12 +8,10 @@
 
 ## Commits identificables
 
-La entrega se organiza en commits separados para que el profesor pueda revisar el recorrido:
+La entrega contiene commits identificables para que el profesor pueda revisar el recorrido:
 
-1. `docs: define ODD and SDD for coworking reservations`
-2. `feat: implement reservation API and interface`
-3. `change: add audiovisual equipment requirement`
-4. `test: cover critical reservation rules`
+1. `feat: deliver nido coworking reservation project` — implementación y documentación.
+2. `docs: verify project delivery requirements` — checklist de entrega y evidencia Git.
 
 ## Ramas y revisión equivalente
 
