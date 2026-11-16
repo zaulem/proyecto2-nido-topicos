@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nido — Reserva espacio para pensar</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">N</span><span>NIDO<span class="brand-dot">.</span></span></a>
+    <nav><a href="#spaces">Espacios</a><a href="#how">Cómo funciona</a><a class="nav-cta" href="#booking">Reservar <span>↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow reveal">COWORKING / SAN JOSÉ / 2026</div>
+      <h1 class="reveal">Un lugar para<br><em>hacer espacio</em><br>a tus ideas.</h1>
+      <p class="hero-copy reveal">Reserva en segundos el espacio que tu trabajo necesita. Sin llamadas, sin cruces, sin ruido.</p>
+      <a class="hero-link reveal" href="#booking">Encuentra tu lugar <span>↓</span></a>
+      <div class="hero-orbit"><div class="orbit-ring"></div><div class="orbit-core">N<span>IDO</span></div><div class="orbit-note">WORK<br>WITH<br>INTENTION</div></div>
+      <div class="hero-line"></div>
+    </section>
+    <section id="spaces" class="spaces-section">
+      <div class="section-label"><span>01</span><span>ELIGE TU RITMO</span></div>
+      <div class="section-heading"><h2>Diseñado para<br><span>tu siguiente paso.</span></h2><p>Cada rincón tiene una razón. Elige la atmósfera que acompaña mejor tu momento.</p></div>
+      <div id="space-list" class="space-grid"></div>
+    </section>
+    <section id="booking" class="booking-section">
+      <div class="section-label"><span>02</span><span>HAZLO REAL</span></div>
+      <div class="booking-layout">
+        <div><h2>Tu mesa<br><em>te espera.</em></h2><p>Completa los datos y recibe confirmación inmediata. La disponibilidad se valida en tiempo real.</p><div class="booking-spark">✦ <span>FLEXIBLE BY DESIGN</span></div></div>
+        <form id="booking-form" class="booking-form">
+          <div class="form-row"><label>Nombre<input name="name" placeholder="Tu nombre" required></label><label>Correo<input name="email" type="email" placeholder="tu@email.com" required></label></div>
+          <div class="form-row"><label>Fecha<input name="date" type="date" required></label><label>Hora<select name="time"><option>08:00</option><option>10:00</option><option>12:00</option><option>14:00</option><option>16:00</option></select></label></div>
+          <label>Espacio<select name="spaceId" id="space-select"></select></label>
+          <label>Duración<select name="duration"><option value="1">1 hora</option><option value="2">2 horas</option><option value="4">4 horas</option><option value="8">Día completo · 8 horas</option></select></label>
+          <fieldset><legend>Equipo extra <small>(opcional)</small></legend><div id="addon-list" class="addon-list"></div></fieldset>
+          <div class="form-total"><span>Total estimado</span><strong id="total">$8</strong></div>
+          <button type="submit" class="submit-button">Confirmar reserva <span>↗</span></button>
+          <p id="form-message" class="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+    <section id="how" class="promise-section"><div class="promise-number">03</div><div><h2>Menos coordinación.<br><em>Más concentración.</em></h2><p>Tu tiempo es demasiado valioso para perseguir disponibilidad. Nido mantiene cada reserva clara y cada decisión ligera.</p></div><div class="promise-stamp">OPEN<br>YOUR<br>DAY</div></section>
+  </main>
+  <footer><span>© 2026 NIDO COWORKING</span><span>ESPACIO PARA HACER</span><span>✦ SAN JOSÉ, CR</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>

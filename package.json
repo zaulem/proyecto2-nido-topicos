@@ -1,0 +1,11 @@
+{
+  "name": "nido-coworking-reservas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de reservas de espacios de coworking desarrollado con ODD y SDD.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  }
+}
