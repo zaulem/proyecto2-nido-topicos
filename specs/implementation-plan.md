@@ -7,4 +7,6 @@
 5. Implementar flujo visual de reserva.
 6. Agregar pruebas unitarias, reglas críticas y aceptación.
 7. Introducir el cambio solicitado de equipo audiovisual.
-8. Ejecutar pruebas y preparar demostración.
+8. Agregar pruebas de aceptación sobre la API (AC-01..AC-07).
+9. Incorporar reglas de fecha pasada y fin antes de medianoche (AC-09).
+10. Ejecutar pruebas y preparar demostración.

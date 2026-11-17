@@ -31,6 +31,16 @@ npm test
 
 Las decisiones, reglas, arquitectura, criterios, plan, bitácora de IA, pruebas y cambio de especificación se encuentran en `specs/` y `docs/`.
 
-## Equipo y proceso
+Las pruebas incluyen reglas de dominio y criterios de aceptación (`AC-xx`) ejecutados contra la API. La trazabilidad criterio → prueba está en `docs/testing.md`.
 
-El repositorio está preparado para demostrar issues, commits identificables, ramas y Pull Request. Los roles del curso se rotan entre Product/Spec Lead, Architecture/Development Lead y QA/DevOps Lead.
+## Equipo y roles
+
+| Integrante | Ciclo 1 (base) | Ciclo 2 (cambio audiovisual) | Ciclo 3 (pruebas y reglas) |
+|---|---|---|---|
+| _Por completar_ | Product / Spec Lead | Architecture / Development Lead | QA / DevOps Lead |
+| _Por completar_ | Architecture / Development Lead | QA / DevOps Lead | Product / Spec Lead |
+| _Por completar_ | QA / DevOps Lead | Product / Spec Lead | Architecture / Development Lead |
+
+## Proceso
+
+Cada cambio se trabaja en una rama, se revisa con `npm test` y se integra en `main` con merge. Evidencia en `docs/git-evidence.md` y `docs/requirements-change.md`.
