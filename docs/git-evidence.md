@@ -8,7 +8,9 @@
 - **#4 — Pruebas de aceptación sobre la API:** una prueba por criterio AC-01..AC-07.
 - **#5 — Reglas de fecha y horario:** rechazar fechas pasadas y reservas que cruzan medianoche (AC-09).
 
-> Se registran como issues en el repositorio remoto al publicarlo.
+- **#6 — Documentar equipo, roles y ejecución:** resuelto mediante Pull Request.
+
+Issues publicados en https://github.com/zaulem/proyecto2-nido-topicos/issues
 
 ## Commits identificables
 
@@ -24,6 +26,7 @@ Commits con prefijos convencionales (`feat`, `docs`, `test`, `fix`). Ver `git lo
 
 - `main`: versión integrable; solo recibe merges revisados.
 - `test/acceptance-api`, `fix/reservation-time-rules`, `docs/process-evidence`: ramas de trabajo integradas con `git merge --no-ff`, de modo que cada integración queda visible en el historial como un commit de merge.
+- `docs/team-roles`: integrada mediante **Pull Request en GitHub**.
 - Criterio de revisión antes de cada merge: `npm test` en verde y specs/criterios actualizados.
 - `feature/reservation-flow` y `change/audiovisual-equipment`: ramas creadas en la primera entrega; apuntan al commit base.
 
