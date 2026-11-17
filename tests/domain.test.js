@@ -10,6 +10,12 @@ test('valida campos obligatorios y correo', () => {
   assert.equal(errors.email, 'Usa un correo válido.');
 });
 
+test('AC-09: rechaza fechas pasadas y reservas que cruzan medianoche', () => {
+  assert.equal(validateReservation({ ...valid, date: '2000-01-01' }).date, 'La fecha no puede estar en el pasado.');
+  assert.equal(validateReservation({ ...valid, time: '20:00', duration: 8 }).duration, 'La reserva debe terminar antes de medianoche.');
+  assert.deepEqual(validateReservation({ ...valid, time: '16:00', duration: 8 }), {});
+});
+
 test('detecta rangos que se cruzan y permite rangos contiguos', () => {
   assert.equal(overlaps(valid, { ...valid, time: '11:00' }), true);
   assert.equal(overlaps(valid, { ...valid, time: '12:00' }), false);

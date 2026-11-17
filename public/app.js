@@ -50,7 +50,8 @@ async function submitBooking(event) {
   const data = await response.json();
   const message = $('#form-message');
   if (!response.ok) {
-    message.textContent = data.error ?? 'Revisa los datos e intenta de nuevo.';
+    const details = data.details ? Object.values(data.details).join(' ') : '';
+    message.textContent = details || data.error || 'Revisa los datos e intenta de nuevo.';
     message.style.color = 'var(--coral)';
     return;
   }

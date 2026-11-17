@@ -8,3 +8,4 @@
 - **AC-06:** El total cambia al modificar duración o equipo adicional.
 - **AC-07:** Una cancelación con correo ajeno no modifica la reserva.
 - **AC-08:** El recorrido funciona en viewport móvil.
+- **AC-09:** Una reserva con fecha pasada o que termina después de las 24:00 se rechaza con un error de validación.
