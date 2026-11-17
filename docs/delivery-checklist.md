@@ -16,4 +16,4 @@
 - [x] Ramas de trabajo integradas con merge (`git log --graph`).
 - [x] Repositorio publicado en GitHub con issues (#1–#6) y Pull Request.
 - [x] Integrantes y roles completados en el README.
-- [ ] Material de presentación.
+- [x] Material de presentación: no aplica; el grupo 1GS242 entrega por Teams sin presentación.
