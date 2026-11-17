@@ -14,6 +14,6 @@
 - [x] Pruebas de aceptación por criterio (`tests/api.test.js`) y matriz en `docs/testing.md`.
 - [x] Evidencia real de `npm test` en `docs/testing-evidence.md`.
 - [x] Ramas de trabajo integradas con merge (`git log --graph`).
-- [ ] Repositorio publicado en GitHub con issues y Pull Request.
-- [ ] Integrantes y roles completados en el README.
+- [x] Repositorio publicado en GitHub con issues (#1–#6) y Pull Request.
+- [x] Integrantes y roles completados en el README.
 - [ ] Material de presentación.

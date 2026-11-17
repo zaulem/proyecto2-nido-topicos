@@ -1,5 +1,8 @@
 # Nido — Sistema de reservas para coworking
 
+**Curso:** Tópicos Especiales II · **Profesor:** Regis Rivera · **Grupo:** 1GS242  
+**Repositorio:** https://github.com/zaulem/proyecto2-nido-topicos
+
 Nido convierte la búsqueda de un espacio de trabajo en una reserva clara, rápida y sin cruces de horario. El proyecto demuestra el recorrido exigido por la asignación: **ODD → SDD → código → pruebas → valor para el usuario**.
 
 ## Ejecutar
@@ -12,6 +15,8 @@ npm start
 ```
 
 Abrir `http://localhost:3000`.
+
+> La interfaz consume la API del servidor Node. Abrir `public/index.html` directamente o con Live Server muestra el diseño, pero no permite consultar ni crear reservas.
 
 ## Pruebas
 
@@ -35,12 +40,13 @@ Las pruebas incluyen reglas de dominio y criterios de aceptación (`AC-xx`) ejec
 
 ## Equipo y roles
 
+Grupo de **2 integrantes** (acordado con el profesor); en cada ciclo un integrante asume dos de los tres roles y los roles rotan entre ciclos.
+
 | Integrante | Ciclo 1 (base) | Ciclo 2 (cambio audiovisual) | Ciclo 3 (pruebas y reglas) |
 |---|---|---|---|
-| _Por completar_ | Product / Spec Lead | Architecture / Development Lead | QA / DevOps Lead |
-| _Por completar_ | Architecture / Development Lead | QA / DevOps Lead | Product / Spec Lead |
-| _Por completar_ | QA / DevOps Lead | Product / Spec Lead | Architecture / Development Lead |
+| Nicolas Athanasiadis | Product / Spec Lead · Architecture / Development Lead | Architecture / Development Lead · QA / DevOps Lead | Product / Spec Lead |
+| Samuel Saenz | QA / DevOps Lead | Product / Spec Lead | Architecture / Development Lead · QA / DevOps Lead |
 
 ## Proceso
 
-Cada cambio se trabaja en una rama, se revisa con `npm test` y se integra en `main` con merge. Evidencia en `docs/git-evidence.md` y `docs/requirements-change.md`.
+Cada cambio parte de un issue, se trabaja en una rama, se revisa con `npm test` y se integra en `main` mediante merge o Pull Request. Evidencia en `docs/git-evidence.md` y `docs/requirements-change.md`.
