@@ -12,14 +12,15 @@ $ npm test
 ✔ AC-06: el total refleja duración y equipo audiovisual
 ✔ AC-07: cancelar con correo ajeno no modifica la reserva
 ✔ valida campos obligatorios y correo
+✔ AC-09: rechaza fechas pasadas y reservas que cruzan medianoche
 ✔ detecta rangos que se cruzan y permite rangos contiguos
 ✔ rechaza doble reserva del mismo espacio y franja
 ✔ permite reservar otro espacio en la misma franja
 ✔ calcula total incluyendo equipo audiovisual
 ✔ cancela únicamente la reserva del correo propietario
-ℹ tests 13
+ℹ tests 14
 ℹ suites 0
-ℹ pass 13
+ℹ pass 14
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
