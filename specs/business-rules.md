@@ -6,3 +6,5 @@
 4. Una reserva que termina a las 12:00 no bloquea otra que inicia a las 12:00.
 5. El total es `precio del espacio × duración + extras`.
 6. Solo el correo que creó la reserva puede cancelarla.
+7. No se aceptan reservas en fechas anteriores al día actual.
+8. Una reserva debe terminar a más tardar a las 24:00 del mismo día (no cruza medianoche).

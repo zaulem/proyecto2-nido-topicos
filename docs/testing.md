@@ -19,6 +19,7 @@
 | AC-06 | `AC-06: el total refleja duración y equipo audiovisual` · `calcula total incluyendo equipo audiovisual` |
 | AC-07 | `AC-07: cancelar con correo ajeno no modifica la reserva` · `cancela únicamente la reserva del correo propietario` |
 | AC-08 | Verificación manual en viewport móvil (DevTools, 375 px) |
+| AC-09 | `AC-09: rechaza fechas pasadas y reservas que cruzan medianoche` |
 
 ## Regla obligatoria
 

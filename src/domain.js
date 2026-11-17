@@ -26,6 +26,10 @@ export function validateReservation(input) {
   if (!input.time || !/^([01]\d|2[0-3]):[0-5]\d$/.test(input.time)) errors.time = 'Selecciona una hora.';
   const duration = Number(input.duration);
   if (![1, 2, 4, 8].includes(duration)) errors.duration = 'La duración no es válida.';
+  if (!errors.date && input.date < today()) errors.date = 'La fecha no puede estar en el pasado.';
+  if (!errors.time && !errors.duration && toMinutes(input.time) + duration * 60 > 24 * 60) {
+    errors.duration = 'La reserva debe terminar antes de medianoche.';
+  }
   if (input.addOns && (!Array.isArray(input.addOns) || input.addOns.some((id) => !ADD_ONS.some((addOn) => addOn.id === id)))) {
     errors.addOns = 'El equipo adicional no es válido.';
   }
@@ -39,6 +43,11 @@ export function overlaps(a, b) {
   const startB = toMinutes(b.time);
   const endB = startB + Number(b.duration) * 60;
   return startA < endB && startB < endA;
+}
+
+export function today() {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 }
 
 export function toMinutes(time) {
